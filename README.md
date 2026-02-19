@@ -7,12 +7,6 @@ Unused snapshots continue generating charges even if their associated infrastruc
 
 ## What It Does
 
-The function:
-
-Retrieves all EBS snapshots owned by the account
-
-Collects all running EC2 instance IDs
-
 Deletes snapshots if:
 
 The associated volume does not exist
@@ -20,8 +14,6 @@ The associated volume does not exist
 The volume is not attached to a running instance
 
 The snapshot has no valid volume reference
-
-Snapshots linked to running infrastructure are preserved.
 
 ## Benefits
 
