@@ -1,11 +1,11 @@
-##AWS Lambda – Stale EBS Snapshot Cost Optimization
-#Overview
+# AWS Lambda – Stale EBS Snapshot Cost Optimization
+## Overview
 
 This AWS Lambda function automatically deletes stale Amazon EBS snapshots to reduce unnecessary storage costs.
 
 Unused snapshots continue generating charges even if their associated infrastructure is no longer active. This function helps keep your AWS environment clean and cost-efficient.
 
-#What It Does
+## What It Does
 
 The function:
 
@@ -23,7 +23,7 @@ The snapshot has no valid volume reference
 
 Snapshots linked to running infrastructure are preserved.
 
-#Benefits
+## Benefits
 
 Reduces AWS storage costs
 
@@ -33,7 +33,7 @@ Automates cleanup
 
 Improves infrastructure hygiene
 
-#Required IAM Permissions
+## Required IAM Permissions
 
 ec2:DescribeSnapshots
 
